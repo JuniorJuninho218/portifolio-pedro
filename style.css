@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Public Sans", sans-serif;
+}
+
+body {
+  background-color: #F4F4F4;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.button-header {
+  width: 170px;
+  height: 48px;
+  opacity: 1;
+  border-radius: 80px;
+  padding: 4px;
+  gap: 4px;
+  backdrop-filter: blur 20px ;
+  border: none;
+  cursor: pointer;
+ }
+
+ .button-header:hover {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: 1s ease;
+ }
+
+ .hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 50px 20px; 
+ }
+
+ .hero-section p {
+  width: 264px;
+  height: 84px;
+  opacity: 1;
+  font-family: Public Sans;
+  font-weight: 400;
+  font-style: Regular ;
+  font-size: 18px;
+  text-align: left;
+  line-height: 100%;
+  letter-spacing: 0%;
+  margin: 30px 0 0 1000px;
+  color: #242424;
+  position: relative;
+ }
+
+ .hero-section p::before {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 17.875532150268555px;
+  position: absolute;
+  margin-left: -25px;
+  background-image: url("./assets/Vector.svg"); 
+ }
+
+ .hero-section h1 {
+  width: 1384px;
+  height: 174px;
+  font-family: Public Sans;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 74px;
+  text-align: left;
+  line-height: 100%;
+  letter-spacing: 0%;
+  margin-top: 130px;
+ }
+
+ .about-section {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 20px;
+
+}
+
+.about-section-text {
+   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-family: Public Sans;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.style-scroll {
+  position: relative;
+}
+
+.style-scroll::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  margin-left: 105px;
+  background-image: url("./assets/arrow_downward.svg");
+}
+
+.style-text {
+  width: 1106px;
+  height: 504px;
+  opacity: 1;
+  font-weight: 300;
+  font-style: Light;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  margin: 260px 0px 0 300px;
+}
+
+.cases-section {
+  display: flex;
+  flex-direction:column;
+  background: #1F1F1F;
+  width: auto;
+  height: 1786px;
+  opacity: 1;
+  padding: 140px;
+  gap: 64px;
+}
+
+.cases-section h2 {
+  font-family: Public Sans;
+  font-weight: 300;
+  font-style: Light;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #FFFFFF;
+  margin-left: 75px;
+}
+
+
+
+.case-item {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.case-item-text {
+  margin: 64px 48px 64px 0px;
+}
+
+.cases-section img {
+  width: 500px;
+  height: 480px;
+  opacity: 1;
+}
+
+.case-item-text h3 {
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  margin-top: 24px;
+  color: #FFFFFF;
+}
+
+.case-item-text p {
+font-weight: 400;
+font-style: Regular;
+font-size: 20px;
+line-height: 100%;
+letter-spacing: 0%;
+margin-top: 16px;
+color: #BABABA;
+}
+
+
+.container-experiencia {
+      height: 100vh;
+      position: relative;
+      background-color: #1c1c1c;
+      overflow: hidden;
+      
+    }
+
+    .experiencia {
+      position: absolute;
+      right: 0;
+      z-index: 1;
+      animation: scrollUp 25s linear infinite;
+      font-size: 180px;
+      color: #DEDEDE;
+      opacity: 0.8;
+      font-weight: 500;
+      font-style: Medium;
+      line-height: 100%;
+      letter-spacing: 0%;
+      text-align: right;
+      white-space: nowrap;
+      margin-top: 198px;
+    }
+
+    @keyframes scrollUp {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(0%);
+      }
+    }
+
+
+    .experience-section {
+      display: flex;
+      flex-direction: column;
+      padding: 50px 20px;
+      margin-top: 460px;
+    }
